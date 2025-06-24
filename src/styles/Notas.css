@@ -1,0 +1,60 @@
+@import './variables.css';
+
+.main-notas {
+    padding: 2em;
+    margin: 0 auto;
+    max-width: 700px;
+    width: 90%;
+}
+
+.main-notas h1 {
+    text-align: center;
+    padding: 2em;
+}
+
+.forms-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 0 10px;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    border-spacing: 0;
+}
+
+th {
+    background-color: var(--bg2);
+}
+
+th, td {
+    padding: .6em;
+}
+
+tr:nth-child(even) {
+    background: var(--bg1);
+}
+
+tr:nth-child(odd) {
+    background: var(--bg3);
+}
+
+.td-aprovado {
+    color: #2e8f2e;
+}
+
+.td-reprovado {
+    color: #862f2f;
+}
+
+.table-num {
+    text-align: right;
+}
+
+.table-center {
+    text-align: center;
+}

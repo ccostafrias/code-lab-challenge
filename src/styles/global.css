@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import './variables.css';
+
+/*Reset & root*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: .15s;
+}
+
+html {
+    --bg: #f4f4f5;
+    --bg2: #d6d7db;
+    --bg3: #c7c7c7;
+    --text: #383a42;
+}
+
+html.dark {
+    --bg: #1e1e1e;
+    --bg2: #3c3d3f;
+    --bg3: #292929;
+    --text: #abb2bf;
+}
+
+body, button, input, textarea, a {
+    color: var(--text);
+    font-family: var(--font-main);
+}
+
+body {
+    background: var(--bg);
+    font-size: 18px;
+    line-height: 1;
+}
+
+button, input {
+    /* appearance: none; */
+    background: none;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Custom resets*/
+
+img {
+    max-width: 100%;
+}
+
+/* input::placeholder {
+    color: var(--white);
+    opacity: .6;
+} */

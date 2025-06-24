@@ -1,0 +1,12 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap'); */
+
+:root {
+    --font-main: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+    --fs-xl: 3rem;
+    --fs-600: 1.8rem;
+    --fs-500: 1.2rem;
+    --fs-400: 1rem;
+    --fs-300: .7rem;
+    --fs-200: .5rem;
+}  
