@@ -3,14 +3,32 @@
     {
       "id": "d913",
       "name": "Caique Costa Frias",
-      "p1": 3,
+      "p1": 2,
       "p2": 4
     },
     {
       "id": "5f2f",
       "name": "Maria Eduarda",
       "p1": 3,
+      "p2": 6
+    },
+    {
+      "id": "4cc2",
+      "name": "Pedrinho da Silva",
+      "p1": 2,
       "p2": 5
+    },
+    {
+      "id": "1377",
+      "name": "Jubileu Frias",
+      "p1": 1,
+      "p2": 0.75
+    },
+    {
+      "id": "bda0",
+      "name": "Pedrinho Matador de Porco",
+      "p1": 1,
+      "p2": 1
     }
   ]
 }

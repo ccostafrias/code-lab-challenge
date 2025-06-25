@@ -58,3 +58,43 @@ tr:nth-child(odd) {
 .table-center {
     text-align: center;
 }
+
+.table-below {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: .5em;
+}
+
+.table--trash-icon {
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.table--edit-icon {
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.table--trash-icon:hover, .table--edit-icon:hover {
+    animation: tilt-shaking 0.20s infinite;
+}
+
+@keyframes tilt-shaking {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0eg); }
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.table--no-students {
+    text-align: center;
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: 0.9em;
+    }
+}

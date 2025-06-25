@@ -46,14 +46,9 @@
   opacity: .8;
 }
   
-  /* Responsividade para telas menores */
-  @media (max-width: 600px) {
-    .header {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .nav-links {
-      margin-top: 10px;
-    }
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  .header, .nav-links a {
+    font-size: 1.05em;
   }
+}
