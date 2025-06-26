@@ -2,10 +2,16 @@
 @import './variables.css';
 
 /*Reset & root*/
-* {
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+}
+
+.transitions-activated, .transitions-activated * {
     transition-property: background-color, border-color, color, fill, stroke;
     transition-duration: .1s;
 }
@@ -15,6 +21,8 @@ html {
     --bg2: #d6d7db;
     --bg3: #c7c7c7;
     --text: #383a42;
+    --red: #bd3030;
+    --green: #2bb32b;
 }
 
 html.dark {
@@ -22,6 +30,8 @@ html.dark {
     --bg2: #3c3d3f;
     --bg3: #292929;
     --text: #abb2bf;
+    --red: #862f2f;
+    --green: #2e8f2e;
 }
 
 body, button, input, textarea, a {
@@ -29,10 +39,17 @@ body, button, input, textarea, a {
     font-family: var(--font-main);
 }
 
-body {
+html, body {
     background: var(--bg);
     font-size: 18px;
     line-height: 1;
+    height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* ou height: 100%; */
 }
 
 button, input {

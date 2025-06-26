@@ -99,14 +99,3 @@ Com base nos alunos cadastrados, o sistema deve prever a nota mínima necessári
 | Lucas | 4      | 5.5    |
 
 Com base nesses dados, a função estimará a `nota2` esperada para novos alunos.
-
----
-
-## 📤 Entrega
-
-A resolução deve estar em um **repositório público no GitHub**.  
-Basta enviar o **link do repositório** ao CodeLab para verificação.
-
----
-
-**Boa sorte e boa diversão! 🚀**

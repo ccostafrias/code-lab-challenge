@@ -1,8 +1,10 @@
+import '../styles/Footer.css'
+
 function Footer() {
 
   return (
     <footer>
-      <span>CodeLab 2025</span>
+      <span>CodeLab &bull; 2025</span>
     </footer>
   )
 }

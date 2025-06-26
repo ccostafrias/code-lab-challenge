@@ -5,6 +5,22 @@
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CodeLab Challenge 2025</title>
+    <script>
+      (function() {
+        function applyTheme(theme) { document.documentElement.className = theme; }
+        try {
+          var savedTheme = localStorage.getItem("theme");
+          if (savedTheme) {
+            applyTheme(savedTheme);
+          } else {
+            var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+            applyTheme(prefersDark ? "dark" : "light");
+          }
+        } catch (e) {
+          applyTheme("light");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

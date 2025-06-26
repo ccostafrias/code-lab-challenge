@@ -1,7 +1,8 @@
 @import './variables.css';
 
 .main-home {
-    padding: 2em;
+    flex-grow: 1;
+    padding: 2em 0;
     margin: 0 auto;
     max-width: 600px;
     width: 90%;
@@ -13,16 +14,35 @@
 }
 
 .forms-wrap {
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 0 0 10px;
+    margin: 0 0 1em;
 }
 
 form input {
     background: var(--bg2);
     border-radius: 10px;
     padding: 0.5em 1em;
+    border: 2px solid transparent;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--text);
+}
+
+form input:has(+ .error-text):not(:focus) {
+    border: 2px solid var(--red);
+}
+
+.error-text {
+    position: absolute;
+    bottom: -12px;
+    right: 0;
+    font-size: .6em;
+    color: var(--red);
 }
 
 form label {
@@ -38,18 +58,6 @@ form label {
     font-size: 0.9em;
 }
 
-.ReactModal__Overlay {
-    opacity: 0;
-    transition: opacity 2000ms ease-in-out;
-}
-
-.ReactModal__Overlay--after-open{
-    opacity: 1;
-}
-
-.ReactModal__Overlay--before-close{
-    opacity: 0;
-}
 
 @media (max-width: 600px) {
     form input {

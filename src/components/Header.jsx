@@ -6,28 +6,38 @@ import { Classic } from "@theme-toggles/react"
 
 function Header() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
+    return localStorage.getItem("theme") || "light"
   })
 
   useEffect(() => {
+    // pega o tema salvo em localStorage
     const savedTheme = localStorage.getItem("theme")
 
+    // se tiver salvo, pega diretamente
     if (savedTheme) {
       setTheme(savedTheme)
-    } else {
+    } else { // se não, pega da preferência do navegador
       const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
       setTheme(prefersDark ? "dark" : "light")
     }
+
+    // só então adicionará uma nova classe para body, 
+    const timer = setTimeout(() => {
+      document.body.classList.add('transitions-activated')
+    }, 50)
+
+    // função de limpeza para remover o timer se o componente for desmontado
+    return () => clearTimeout(timer)
   }, [])
 
   useEffect(() => {
-    document.documentElement.className = theme;
-    localStorage.setItem("theme", theme);
+    // coloca uma classe em <html> para fins de controlar o tema com CSS
+    document.documentElement.className = theme
+    localStorage.setItem("theme", theme)
   }, [theme])
 
   const toggleTheme = () => {
     setTheme(prev => (prev === "light" ? "dark" : "light"));
-    console.log("TROCOU")
   }
 
   return (

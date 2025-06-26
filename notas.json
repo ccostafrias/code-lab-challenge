@@ -25,10 +25,16 @@
       "p2": 0.75
     },
     {
-      "id": "bda0",
-      "name": "Pedrinho Matador de Porco",
-      "p1": 1,
-      "p2": 1
+      "id": "d02b",
+      "name": "Jubileu Frias",
+      "p1": 8,
+      "p2": 9
+    },
+    {
+      "id": "4e37",
+      "name": "Jubileu Frias",
+      "p1": 9,
+      "p2": 8
     }
   ]
 }
